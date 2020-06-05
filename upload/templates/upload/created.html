@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block body %}
+<h1>Information</h1>
+
+{% if download_url %}
+<p>Download URL: <a href="{{download_url}}">{{download_url}}</a></p>
+{% endif %}
+{% if download_url %}
+<p>Delete URL: <a href="{{delete_url}}">{{delete_url}}</a></p>
+{% endif %}
+
+{% endblock %}
